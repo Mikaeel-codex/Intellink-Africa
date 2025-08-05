@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Intellink Africa</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/SplitText.min.js"></script>
+    
+     <!-- React & Babel -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+   
+    
+    <!-- Lenis smooth scrolling -->
+    <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+
+  
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <nav>
+        <div class="nav-logo">
+            <img src="Full Logo.png" alt="Intellik Africa" />
+        </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+    </nav>
+
+  <!-- Landing Page / Hero Section -->
+  <section id="home">
+    <img src="africamap.PNG" alt="Africa Map" class="africa-map">
+    <div class="floating-shapes">
+        <div class="shape shape1"></div>
+            <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+    </div>
+    <div id="parallax-bg"></div>
+    <div class="logo-container">
+        <div class="logo-pulse"></div>
+            <img src="Logo Symbol.png" alt="logo" class="slide-in-logo">
+    </div>
+    <h1 id="headline"><strong>Welcome to Intellink Africa</strong></h1>
+    <p id="subline">Intelligent Solutions, Africa Innovation.</p>  
+</section>
+
+  <!-- Services Section -->
+  <section id="services">
+  <div class="container">
+        <header>
+            <h1>Our Premium Services</h1>
+            <p>We deliver exceptional solutions tailored to your needs. Explore our comprehensive range of services designed to propel your business forward.</p>
+        </header>
+        
+        <div class="services-grid">
+            <!-- Card 1 -->
+            <div class="pixel-card">
+                <canvas class="pixel-canvas" id="canvas1"></canvas>
+                <div class="card-front">
+                    <div class="card-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Web & App <br>Development</h3>
+                </div>
+                <div class="card-back">
+                    <div class="card-icon">
+        
+                    </div>
+                    <h3>Web & App Development</h3>
+                    <p> 
+                      <ul> 
+                        <li>Website Design & Development (Static, Dynamic, E-Commerce).</li>
+                        <li>Progressive Web Apps (PWAs).</li>
+                        <li>Mobile App Development (Android & iOS - Native/Flutter).</li>
+                        <li>Web Portals for Schools, NGOs, and SMEs.</li>
+                       </ul>
+                    </p>
+                    
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="pixel-card">
+                <canvas class="pixel-canvas" id="canvas2"></canvas>
+                <div class="card-front">
+                    <div class="card-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Artificial Intelligence & Automation</h3>
+                </div>
+                <div class="card-back">
+                    <div class="card-icon">
+                        
+                    </div>
+                    <h3>Artificial Intelligence & Automation</h3>
+                    <p> 
+                      <ul>                   
+                        <li>AI-Powered Chatbots.</li>
+                        <li>Custom AI Solutions (ML Models, NLP, Computer Vision).</li>
+                        <li> Workflow Automation.</li>
+                        <li>Predictive Analytics Tools.</li> 
+                      </ul>     
+                    </p>
+                    
+                </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="pixel-card">
+                <canvas class="pixel-canvas" id="canvas3"></canvas>
+                <div class="card-front">
+                    <div class="card-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>IT Support & Infrastructure</h3>
+                </div>
+                <div class="card-back">
+                    <div class="card-icon">
+                        
+                    </div>
+                    <h3>IT Support & Infrastructure</h3>
+                    <p> 
+                      <ul>
+                        <li>Hardware & Software Installation.</li>
+                        <li>Network Setup & Management (LAN/WiFi).</li>
+                        <li>IT Consultancy & Maintenance;</li>
+                        <li>Cybersecurity & Data Protection Services.</li>
+                      </ul>
+                    </p>
+                    
+                </div>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="pixel-card">
+                <canvas class="pixel-canvas" id="canvas4"></canvas>
+                <div class="card-front">
+                    <div class="card-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3> Cloud & DevOps Services</h3>
+                </div>
+                <div class="card-back">
+                    <div class="card-icon">
+                        
+                    </div>
+                    <h3> Cloud & DevOps Services</h3>
+                    <p>
+                      <ul>   
+                        <li>Cloud Migrations (AWS, Azure, GCP).</li>
+                        <li>DevOps Implementation (CI/CD Pipelines).</li>
+                        <li>Cloud Backup & Disaster Recovery.</li>
+                        <li>SaaS Deployment & Customization.</li>
+                      </ul>
+                    </p>
+                    
+                </div>
+            </div>
+            
+            <!-- Card 5 -->
+            <div class="pixel-card">
+                <canvas class="pixel-canvas" id="canvas5"></canvas>
+                <div class="card-front">
+                    <div class="card-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Data Solutions</h3>
+                </div>
+                <div class="card-back">
+                    <div class="card-icon">
+                        
+                    </div>
+                    <h3>Data Solutions</h3>
+                    <p> 
+                       <ul>
+                        <li>Database Design, Development & Management (SQL, NoSQL).</li>
+                        <li>Big Data Processing & Integration.</li>
+                        <li>Data Visualization Dashboards (Power BI, Tableau).</li>
+                        <li>ETL Pipelines.</li>
+                       </ul>                     
+                    </p>
+                    
+                </div>
+            </div>
+            
+            <!-- Card 6 -->
+            <div class="pixel-card">
+                <canvas class="pixel-canvas" id="canvas6"></canvas>
+                <div class="card-front">
+                    <div class="card-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3> Digital Marketing & Branding</h3>
+                </div>
+                <div class="card-back">
+                    <div class="card-icon">
+                        
+                    </div>
+                    <h3> Digital Marketing & Branding</h3>
+                    <p> 
+                      <ul>
+                        <li>Social Media Management.</li>
+                        <li>SEO Optimization.</li>
+                        <li>Paid Advertising (Google Ads, Meta Ads).</li>
+                        <li>Brand Identity (Logos, UI/UX Kits).</li>
+                      </ul>                   
+                    </p>
+                    
+                </div>
+            </div>
+            
+            <!-- Card 7 -->
+            <div class="pixel-card">
+                <canvas class="pixel-canvas" id="canvas7"></canvas>
+                <div class="card-front">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Business Intelligence & Analytics</h3>
+                </div>
+                <div class="card-back">
+                    <div class="card-icon">
+                        
+                    </div>
+                    <h3>Business Intelligence & Analytics</h3>
+                    <p> 
+                       <ul>
+                          <li>Custom Dashboards.</li>
+                          <li>Business Reporting Tools.</li>
+                          <li>KPI Tracking Systems.</li>
+                       </ul> 
+                    </p>
+                    
+                </div>
+            </div>
+            
+            <!-- Card 8 -->
+            <div class="pixel-card">
+                <canvas class="pixel-canvas" id="canvas8"></canvas>
+                <div class="card-front">
+                    <div class="card-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Custom Software Development</h3>
+                </div>
+                <div class="card-back">
+                    <div class="card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Custom Software Development</h3>
+                    <p>
+                       <ul>
+                        <li>Inventory Systems.</li>
+                        <li>Billing & Invoice Solutions.</li>
+                        <li>CRM & ERP Development.</li>
+                        <li>HR & Payroll Systems.</li>
+                       </ul>  
+                    </p>
+                    
+                </div>
+            </div>
+            
+            <!-- Card 9 -->
+            <div class="pixel-card">
+                <canvas class="pixel-canvas" id="canvas9"></canvas>
+                <div class="card-front">
+                    <div class="card-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Tech Education & Training</h3>
+                </div>
+                <div class="card-back">
+                    <div class="card-icon">
+                        
+                    </div>
+                    <h3>Tech Education & Training</h3>
+                    <p> 
+                        <ul>
+                        <li>Workshops for Teams & Schools (HTML, CSS, JS, Python, AI).</li>
+                        <li>Corporate Digital Skills Training.</li>
+                        <li>Tech Bootcamps (Frontend, Backend, Cloud, AI).</li>
+                        </ul>
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Intellink Africa. All rights reserved.
+  </footer>
+
+  <!-- java code -->
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const headline = document.getElementById("headline");
+    const subline = document.getElementById("subline");
+
+    if (!headline || !subline) return;
+
+    const headlineText = headline.textContent.trim();
+    const sublineText = subline.textContent.trim();
+
+    // Animate headline
+    headline.innerHTML = "";
+    headlineText.split("").forEach((char) => {
+      const span = document.createElement("span");
+      span.textContent = char;
+      span.style.display = "inline-block";
+      if (char === " ") span.style.width = "0.5em";
+      headline.appendChild(span);
+    });
+
+    gsap.fromTo("#headline span", 
+  { opacity: 0, y: 50 }, 
+  { opacity: 1, y: 0, stagger: 0.05, duration: 1, ease: "power3.out" }
+);
+
+
+    // Animate subline
+    subline.innerHTML = "";
+    sublineText.split("").forEach((char) => {
+      const span = document.createElement("span");
+      span.textContent = char;
+      span.style.display = "inline-block";
+      if (char === " ") span.style.width = "0.5em";
+      subline.appendChild(span);
+    });
+
+    gsap.fromTo("#subline span",
+  { opacity: 0, y: 50 },
+  { opacity: 1, y: 0, stagger: 0.05, duration: 1, ease: "power3.out", delay: 0.5 }
+);
+
+  });
+</script>
+
+<script>
+        class Pixel {
+            constructor(canvas, context, x, y, color, speed, delay) {
+                this.width = canvas.width;
+                this.height = canvas.height;
+                this.ctx = context;
+                this.x = x;
+                this.y = y;
+                this.color = color;
+                this.speed = this.getRandomValue(0.1, 0.9) * speed;
+                this.size = 0;
+                this.sizeStep = Math.random() * 0.4;
+                this.minSize = 0.5;
+                this.maxSizeInteger = 2;
+                this.maxSize = this.getRandomValue(this.minSize, this.maxSizeInteger);
+                this.delay = delay;
+                this.counter = 0;
+                this.counterStep = Math.random() * 4 + (this.width + this.height) * 0.01;
+                this.isIdle = false;
+                this.isReverse = false;
+                this.isShimmer = false;
+            }
+
+            getRandomValue(min, max) {
+                return Math.random() * (max - min) + min;
+            }
+
+            draw() {
+                const centerOffset = this.maxSizeInteger * 0.5 - this.size * 0.5;
+                this.ctx.fillStyle = this.color;
+                this.ctx.fillRect(
+                    this.x + centerOffset,
+                    this.y + centerOffset,
+                    this.size,
+                    this.size
+                );
+            }
+
+            appear() {
+                this.isIdle = false;
+                if (this.counter <= this.delay) {
+                    this.counter += this.counterStep;
+                    return;
+                }
+                if (this.size >= this.maxSize) {
+                    this.isShimmer = true;
+                }
+                if (this.isShimmer) {
+                    this.shimmer();
+                } else {
+                    this.size += this.sizeStep;
+                }
+                this.draw();
+            }
+
+            disappear() {
+                this.isShimmer = false;
+                this.counter = 0;
+                if (this.size <= 0) {
+                    this.isIdle = true;
+                    return;
+                } else {
+                    this.size -= 0.1;
+                }
+                this.draw();
+            }
+
+            shimmer() {
+                if (this.size >= this.maxSize) {
+                    this.isReverse = true;
+                } else if (this.size <= this.minSize) {
+                    this.isReverse = false;
+                }
+                if (this.isReverse) {
+                    this.size -= this.speed;
+                } else {
+                    this.size += this.speed;
+                }
+            }
+        }
+
+        function getEffectiveSpeed(value, reducedMotion) {
+            const min = 0;
+            const max = 100;
+            const throttle = 0.001;
+            const parsed = parseInt(value, 10);
+
+            if (parsed <= min || reducedMotion) {
+                return min;
+            } else if (parsed >= max) {
+                return max * throttle;
+            } else {
+                return parsed * throttle;
+            }
+        }
+
+        const VARIANTS = {
+            default: {
+                activeColor: null,
+                gap: 5,
+                speed: 35,
+                colors: "#f8fafc,#f1f5f9,#cbd5e1",
+                noFocus: false
+            },
+            blue: {
+                activeColor: "#e0f2fe",
+                gap: 10,
+                speed: 25,
+                colors: "#e0f2fe,#7dd3fc,#0ea5e9",
+                noFocus: false
+            },
+            yellow: {
+                activeColor: "#fef08a",
+                gap: 3,
+                speed: 20,
+                colors: "#fef08a,#fde047,#eab308",
+                noFocus: false
+            },
+            pink: {
+                activeColor: "#fecdd3",
+                gap: 6,
+                speed: 80,
+                colors: "#fecdd3,#fda4af,#e11d48",
+                noFocus: true
+            }
+        };
+
+        class PixelCard {
+            constructor(container, canvas, variant = "default") {
+                this.container = container;
+                this.canvas = canvas;
+                this.variantCfg = VARIANTS[variant] || VARIANTS.default;
+                this.pixels = [];
+                this.animationId = null;
+                this.timePrevious = performance.now();
+                this.reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+                this.init();
+                this.addEventListeners();
+            }
+
+            init() {
+                const rect = this.container.getBoundingClientRect();
+                const width = Math.floor(rect.width);
+                const height = Math.floor(rect.height);
+                const ctx = this.canvas.getContext("2d");
+
+                this.canvas.width = width;
+                this.canvas.height = height;
+                this.canvas.style.width = `${width}px`;
+                this.canvas.style.height = `${height}px`;
+
+                const colorsArray = this.variantCfg.colors.split(",");
+                const gap = this.variantCfg.gap;
+                const speed = this.variantCfg.speed;
+
+                for (let x = 0; x < width; x += parseInt(gap, 10)) {
+                    for (let y = 0; y < height; y += parseInt(gap, 10)) {
+                        const color = colorsArray[Math.floor(Math.random() * colorsArray.length)];
+
+                        const dx = x - width / 2;
+                        const dy = y - height / 2;
+                        const distance = Math.sqrt(dx * dx + dy * dy);
+                        const delay = this.reducedMotion ? 0 : distance;
+
+                        this.pixels.push(
+                            new Pixel(
+                                this.canvas,
+                                ctx,
+                                x,
+                                y,
+                                color,
+                                getEffectiveSpeed(speed, this.reducedMotion),
+                                delay
+                            )
+                        );
+                    }
+                }
+            }
+
+            animate(fnName) {
+                this.animationId = requestAnimationFrame(() => this.animate(fnName));
+                const timeNow = performance.now();
+                const timePassed = timeNow - this.timePrevious;
+                const timeInterval = 1000 / 60;
+
+                if (timePassed < timeInterval) return;
+                this.timePrevious = timeNow - (timePassed % timeInterval);
+
+                const ctx = this.canvas.getContext("2d");
+                ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+
+                let allIdle = true;
+                for (let i = 0; i < this.pixels.length; i++) {
+                    const pixel = this.pixels[i];
+                    pixel[fnName]();
+                    if (!pixel.isIdle) {
+                        allIdle = false;
+                    }
+                }
+                if (allIdle) {
+                    cancelAnimationFrame(this.animationId);
+                }
+            }
+
+            handleAnimation(name) {
+                cancelAnimationFrame(this.animationId);
+                this.animationId = requestAnimationFrame(() => this.animate(name));
+            }
+        }
+
+        // Initialize all pixel cards
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.pixel-card');
+            
+            cards.forEach((card, index) => {
+                const canvas = card.querySelector('.pixel-canvas');
+                const pixelCard = new PixelCard(card, canvas, 'blue');
+                
+                card.addEventListener('mouseenter', () => {
+                    pixelCard.handleAnimation('appear');
+                });
+                
+                card.addEventListener('mouseleave', () => {
+                    pixelCard.handleAnimation('disappear');
+                });
+            });
+        });
+    </script>
+
+<!-- ===== Particles Background (must be delayed until DOM is ready) ===== -->
+
+   <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+        "color": { "value": "#ffffff" },
+        "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" } },
+        "opacity": { "value": 0.5, "random": false },
+        "size": { "value": 3, "random": true },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 2,
+          "direction": "none",
+          "out_mode": "out"
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": { "enable": true, "mode": "repulse" },
+          "onclick": { "enable": true, "mode": "push" }
+        },
+        "modes": {
+          "repulse": { "distance": 100 },
+          "push": { "particles_nb": 4 }
+        }
+      },
+      "retina_detect": true
+    });
+  });
+</script>
+
+<script>
+  window.addEventListener("scroll", function () {
+    const parallax = document.getElementById("parallax-bg");
+    let offset = window.pageYOffset;
+    parallax.style.transform = `translateY(${offset * 0.5}px)`;
+  });
+</script>
+
+
+
+</body>
+</html>
